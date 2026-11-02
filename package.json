@@ -1,0 +1,19 @@
+{
+  "name": "bearing-life-calc",
+  "version": "1.0.0",
+  "description": "Basic rolling bearing rating life calculator",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "bearing-life-calc": "dist/cli.js" },
+  "exports": "./dist/life.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test/life.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
